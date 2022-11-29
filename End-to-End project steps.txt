@@ -1,0 +1,29 @@
+Steps to perform Data Science End to End Project:
+
+Download the dataset through CMD:  wget [dataset_url]
+1) Create a script data_dump.py for dumping the dataset into the mongodb.
+2) Create a script for setup.py (In order to convert our code to library we need setup.py file within our project folder structure).
+   We can use the source code anywhere.
+3) Create a folder Sensor ( find_packages , will try to find all the python source code related to the sensor package) 
+   Now the question is: How the find_packages will find the specific file as python package? It will find the __init__.py file for the sensor (specific file),
+   by which the find_packages will be considered as python package/modules, etc.
+   
+   Each folder can be identified as python package where this __init__.py file is present in the folder.
+   
+4) In the requirement.txt is to push all the required files for the project.
+5) Create a new function for adding content of requirements.txt file. (-e. -->helps to trigger the setup.py file, & help to trigger the setup.py file)
+   or your if you want source code into library
+6) . means current directly. e--> editable 
+7) In the CMD, run pip install -r requirements.txt --  to install the required dependencies and install our library created (for this case "sensor" is installed
+   as sensor 0.0.1.
+
+
+8) Training Pipeline for any Machine Learning Project:
+    i) Data Ingestion - Read the data & create train,validation & test datasets
+   ii) Data Validation - Check data types, shape, type of columns, check the constrains basically, checking no.og columns&rows
+  iii) Data Transformation
+   iv) Model Trainer
+    v) Model Evaluation
+   vi) Model Pusher
+    
+    The pipeline is composed by components arranged in specific order.
