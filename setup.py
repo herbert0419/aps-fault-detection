@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from setuptools import find_packages,setup
 
 from typing import List
@@ -26,3 +27,20 @@ setup(
     install_requires=get_requirements(),
 )
 
+=======
+from setuptools import find_packages,setup
+
+
+def get_requirements():
+    pass
+
+setup(
+    name="sensor",
+    version="0.0.1",
+    author="ineuron",
+    author_email="avnish@ineuron.ai",
+    packages = find_packages(),
+    install_requires=get_requirements(),
+)
+
+>>>>>>> 2d3fd8fbc2fa576e62090c59c58dce7c5e3483ae
