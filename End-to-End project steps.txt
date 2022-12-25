@@ -1,6 +1,7 @@
 Steps to perform Data Science End to End Project:
 
 Download the dataset through CMD:  wget [dataset_url]
+To dump the dataframe in MongoDB we need to convert the dataframe into JSON
 1) Create a script data_dump.py for dumping the dataset into the mongodb.
 2) Create a script for setup.py (In order to convert our code to library we need setup.py file within our project folder structure).
    We can use the source code anywhere.
@@ -27,3 +28,5 @@ Download the dataset through CMD:  wget [dataset_url]
    vi) Model Pusher
     
     The pipeline is composed by components arranged in specific order.
+    
+    
