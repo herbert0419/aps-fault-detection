@@ -30,3 +30,24 @@ To dump the dataframe in MongoDB we need to convert the dataframe into JSON
     The pipeline is composed by components arranged in specific order.
     
     
+    
+Git Steps:
+
+To check an existing repo: git remote -v
+To remove an existing repo: git remote remove origin
+To check the log: git log
+To add a new remote repo: git remote add origin https://github.com/herbert0419/APS-Sensor-Project.git
+To match repos: git pull origin main
+You may face the error bcoz of commits are not same for same repo: fatal: refusing to merge unrelated histories (No matching history)
+We will delete the unwanted logs: 
+ls -a (check directory)
+cd .git/ --> ls --> cd logs --> cat HEAD
+git reset --hard (to remove all logs)
+or to remove the unmatched one: git reset --soft 6afd 
+
+To make git identify the user:
+	git config --global user.email "devshobhan4@example.com"
+	git config --global user.name "herbert0419"
+
+
+
